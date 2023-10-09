@@ -1,0 +1,207 @@
+.widget-area {
+    padding: 100px 0px;
+}
+.widget {
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+.widget h2 {
+    border-bottom: 0px solid #ddd;
+    padding-bottom: 0px;
+}
+.entry-footer {
+    margin-top: 15px;
+}
+pre {
+    background: #fff;
+    padding: 10px;
+}
+.bg-image {
+    position: relative;
+}
+.industry-single-slide{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-size: cover;
+    background-color: #ddd;
+    width: 260px;
+    height: 260px;
+    border-radius: 100%;
+    background-position: center;
+    display: table;
+    animation: morph 8s ease-in-out infinite 1s;
+    background-blend-mode: multiply;
+    -webkit-box-shadow: inset 0px 0px 0px 9px rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0px 0px 0px 9px rgba(0,0,0,.3);
+    box-shadow: inset 0px 0px 0px 9px rgba(0,0,0,.3);
+    z-index: 9;
+}
+.industry-single-slide-inner{
+	margin: 100px 0;
+}
+.bannar-content {
+    margin-top: 60px;
+}
+.industry-single-slide-inner h2{
+    font-size: 60px;
+    line-height: 1.3;
+    color: #000;
+}
+.industry-single-slide-inner p{
+    font-size: 16px;
+    color: #000;
+}
+@keyframes morph {
+ 0% {
+  border-radius:60% 40% 30% 70%/60% 30% 70% 40%
+ }
+ 50% {
+  border-radius:30% 60% 70% 40%/50% 60% 30% 60%
+ }
+ 100% {
+  border-radius:60% 40% 30% 70%/60% 30% 70% 40%
+ }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .industry-single-slide-inner h2 {
+        font-size: 40px;
+    }
+    .industry-single-slide-inner p {
+        margin:0px;
+    }
+}
+.entry-meta.post-top {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+article.post {
+    margin-bottom: 30px;
+    background-color: transparent; 
+    box-shadow: 0px 0px 0px rgba(0,0,0,.07);
+    border: 1px solid #ddd;
+}
+.blog-button {
+    margin-top: 30px;
+}
+.blog-button a {
+    border: 1px solid #ddd;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.blog-button a:hover {
+    background-color: #ddd;
+    transition: 0.5s;
+}
+.page-links {
+    margin-top: 30px;
+}
+h1,h2,h3,h4,h5,h6 {
+  overflow-wrap: break-word;
+      -ms-word-break: break-word;
+      word-break: break-word;
+}
+.nav-links a {
+    overflow-wrap: break-word;
+    -ms-word-break: break-word;
+    word-break: break-word;
+}
+/*========================================================== 
+    Responsive
+============================================================*/
+/*========================================================== 
+    Desktop Layout: 950px
+============================================================*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .bannar-content {
+    	margin-top: 0px;
+    }
+    .industry-single-slide {
+    	width: 200px;
+    	height: 200px;
+    }
+}
+/*========================================================== 
+    Tablet Layout: 768px
+============================================================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+     .industry-single-slide-inner h2 {
+        font-size: 40px;
+    }
+    .industry-single-slide-inner p {
+        margin:0px;
+    }
+    .industry-single-slide {
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		margin: 0px auto;
+		top: -25px;
+	}
+	.bannar-content {
+		margin-top: 25%;
+		text-align: center;
+		display:inline-block;
+	}
+	.industry-single-slide-inner {
+    	display: inherit;
+    	vertical-align: middle;
+    }
+}
+/*========================================================== 
+   Wide Mobile Layout
+============================================================*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .industry-single-slide {
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		margin: 0px auto;
+		top: -25px;
+	}
+	.bannar-content {
+		margin-top: 40%;
+		text-align: center;
+		display:inline-block;
+	}
+	.industry-single-slide-inner {
+    	display: inherit;
+    	vertical-align: middle;
+    }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+    .industry-single-slide {
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		margin: 0px auto;
+		top: -25px;
+	}
+	.bannar-content {
+		margin-top: 40%;
+		text-align: center;
+		display:inline-block;
+	}
+  
+}
+/*========================================================== 
+    Mobile Layout
+============================================================*/
+@media (min-width: 320px) and (max-width: 480px) {
+	.industry-single-slide {
+		width: 200px;
+		height: 200px;
+		background-position: center;
+		margin: 0px auto;
+		top: -25px;
+	}
+	.bannar-content {
+		margin-top: 60%;
+		text-align: center;
+		display:inline-block;
+	}
+}
